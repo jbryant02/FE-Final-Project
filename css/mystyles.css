@@ -1,0 +1,59 @@
+/* General */
+body {
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+.row {
+}
+
+/* Heading */
+/* Navigation */
+/* Footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.socialMedia {
+    max-height: 2em;
+    max-width: 1.8em;
+    border-left: 2px;
+    border-right: 2px;
+    border-right-color: black;
+    border-right-style: solid;
+    padding: 1em
+}
+
+.socialMediaBox {
+    display: inline-flex;
+    max-height: 10vh;
+    width: 100%;
+    justify-content: left;
+    background: linear-gradient(bisque 90%, lightblue);
+    box-shadow: 0 0 22px .2rem black;
+}
+
+
+#toppage {
+    display: flex;
+    padding: .1em 1em 2em 1em;
+    max-height: 100%;
+    margin-left: auto;
+    margin-top: .7em;
+    margin-right: .7em;
+    margin-bottom: 1em;
+    background: linear-gradient(orangered, bisque);
+    box-shadow: 0 0 1px .1rem black;
+}
+
+/* Media Queries*/
+@media (min-width: 769px) {
+
+}
