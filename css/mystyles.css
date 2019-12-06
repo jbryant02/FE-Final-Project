@@ -38,6 +38,9 @@ footer {
     justify-content: left;
     background: linear-gradient(bisque 90%, lightblue);
     box-shadow: 0 0 22px .2rem black;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+        
 }
 
 
@@ -52,6 +55,52 @@ footer {
     background: linear-gradient(orangered, bisque);
     box-shadow: 0 0 1px .1rem black;
 }
+/* Regions */
+
+.South {
+    fill: red;
+}
+
+.Northeast {
+    fill: blue;
+}
+
+.Great-Lakes {
+    fill: orange;
+}
+
+.Rockies {
+    fill: purple;
+}
+
+.Midwest {
+    fill: cornflowerblue;
+}
+
+.Southwest {
+    fill: turquoise;
+}
+
+.Utah {
+    fill: orangered;
+}
+
+.California {
+    fill: pink;
+}
+
+.Northwest {
+    fill: forestgreen;
+}
+
+.Hawaii {
+    fill: darkred;
+}
+
+.Alaska {
+    fill: saddlebrown;
+}
+
 
 /* Media Queries*/
 @media (min-width: 769px) {
