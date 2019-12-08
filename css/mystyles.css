@@ -1,60 +1,125 @@
 /* General */
 body {
-    background-color: orangered;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100%;
     overflow-wrap: break-word;
 }
-.row {
+
+.container {
+    padding-left: 0;
+    margin left: 0;
+}
+
+#svgmap {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    padding-bottom: 0;
+    padding-left: 10%;
+
+}
+
+.reset {
+    margin-left: 70%;
+}
+
+.Map {
+    padding-top: 10px;
+    border-top: 10px double black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 10px double white;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 30px 15px;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
 }
 
 /* Heading */
-/* Navigation */
-/* Footer */
-footer {
-    margin-top: auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.display-4 {
+    font-weight: bolder;
+    font-size: 4em;
+    border-bottom: 5px dotted;
+    border-top: 20px solid;
+    border-bottom-color: black;
+    border-top-color:beige;
+}
 
+
+.jumbotron {
+    background-image: url(../images/DSC06347.png);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-weight: bolder;
+    align-content: center;
+    text-align: center;
+
+}
+
+.photogroup {
+    border-bottom: 15px solid black;
+    margin-bottom: 45px;
+}
+#change-image {
+    text-align: center;
+    border-top: 5px solid;
+    border-left: 5px dotted;
+    border-right: 5px dotted;
+    border-bottom: 5px solid;
+    padding:10px;
+}
+
+
+/* Navigation */
+.navbar-collapse.in {
+    display: block;
+}
+
+/* Footer */
+.request {
+    color: black;
+    margin-top: 7px;
+    
+}
+footer {
+    display: inline-flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+    background-color:#2125;
+    min-width: 100%;
+    justify-content: center;
+    flex: auto;
 }
 
 .socialMedia {
-    max-height: 2em;
-    max-width: 1.8em;
-    border-left: 2px;
-    border-right: 2px;
+    max-height: 3.5em;
+    max-width: 3.5em;
+    border-left: 0px;
+    border-right: 3px;
     border-right-color: black;
-    border-right-style: solid;
-    padding: 1em
+    padding: .5em;
+    margin-top: 0px;
+    background-color: none;
+    align-content: center;
+    display: inline-grid;
 }
 
-.socialMediaBox {
-    display: inline-flex;
-    max-height: 10vh;
-    width: 100%;
-    justify-content: left;
-    background: linear-gradient(bisque 90%, lightblue);
-    box-shadow: 0 0 22px .2rem black;
-    border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-        
+img:hover {
+    transform: scale(1.2)
+    
 }
 
 
-#toppage {
-    display: flex;
-    padding: .1em 1em 2em 1em;
-    max-height: 100%;
-    margin-left: auto;
-    margin-top: .7em;
-    margin-right: .7em;
-    margin-bottom: 1em;
-    background: linear-gradient(orangered, bisque);
-    box-shadow: 0 0 1px .1rem black;
-}
 /* Regions */
 
 .South {
@@ -103,6 +168,44 @@ footer {
 
 
 /* Media Queries*/
+@media (min-width: 319px) {
+
+    .jumbotron {
+        min-height: 600px;
+        color: white;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .jumbotron {
+        min-height: 700px;
+        
+
+    }
+.request {
+    color: black;
+}
+
+
+}
+
 @media (min-width: 769px) {
+
+    .jumbotron {
+        min-height: 900px;
+        color:black;
+    }
+
+.request {
+    color: black;
+}
+
+@media (min-width: 1080px) {
+
+    .jumbotron {
+        min-height: 1200px;
+    }
 
 }
