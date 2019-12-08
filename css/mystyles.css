@@ -54,7 +54,7 @@ footer {
 
 
 .jumbotron {
-    background-image: url(../images/DSC06347.png);
+    background-image: url(../images/DSC06348.JPG);
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,10 +114,6 @@ footer {
     display: inline-grid;
 }
 
-img:hover {
-    transform: scale(1.2)
-    
-}
 
 
 /* Regions */
@@ -179,6 +175,7 @@ img:hover {
 
 @media (min-width: 600px) {
 
+
     .jumbotron {
         min-height: 700px;
         
@@ -192,7 +189,9 @@ img:hover {
 }
 
 @media (min-width: 769px) {
-
+    img:hover {
+        transform: scale(1.2)
+    }
     .jumbotron {
         min-height: 900px;
         color:black;
