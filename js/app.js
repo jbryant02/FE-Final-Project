@@ -4,7 +4,8 @@ var $regions;
 
 
 $('.Map').children().on('click', function (event) {
-    if ($(this).attr("id") !== "reset") { //excludes reset button and overall map from click to prevent opacity changes.
+    if ($(this).attr("id") !== "reset" && $(this).attr("id") !== "button-group") { //excludes reset button to prevent opacity changes.
+        console.log($(this).parent().attr("id"));
         console.log(event.target);
         $regions = $(event.target).attr("class");
         console.log($regions);
@@ -21,6 +22,12 @@ $('.Map').children().on('click', function (event) {
 $('.reset').on('click', function (event) {
     for (var i = 0; i < region.length; i++) { //loops through regions to restyle
         $("." + region[i]).removeAttr('style');
+    }
+});
+
+$('.hidemap').on('click', function (event) {
+    for (var i = 0; i < region.length; i++) { //hides map
+        $("." + region[i]).hide(1000);
     }
 });
 

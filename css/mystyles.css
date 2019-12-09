@@ -21,9 +21,22 @@ body {
     padding-left: 10%;
 
 }
+.button-group {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: -1;
+}
 
 .reset {
-    margin-left: 70%;
+    margin-left: 1px;
+    z-index: 5;
+}
+
+.hidemap {
+    margin-left: auto;
+    margin-right: .35em;
+    z-index: 5;
 }
 
 .Map {
@@ -50,6 +63,7 @@ footer {
     border-top: 20px solid;
     border-bottom-color: black;
     border-top-color:beige;
+    text-shadow: 2px 2px grey;
 }
 
 
@@ -64,6 +78,11 @@ footer {
     align-content: center;
     text-align: center;
 
+}
+.lead {
+    font-size:1.5em;
+    font-weight: 400;
+    color: black;
 }
 
 .photogroup {
@@ -99,14 +118,14 @@ footer {
     min-width: 100%;
     justify-content: center;
     flex: auto;
+    box-shadow: 5px 10px #888888;;
 }
 
 .socialMedia {
     max-height: 3.5em;
     max-width: 3.5em;
     border-left: 0px;
-    border-right: 3px;
-    border-right-color: black;
+    border-right: 3px solid black;
     padding: .5em;
     margin-top: 0px;
     background-color: none;
@@ -233,9 +252,6 @@ body {
 
 }
 
-.reset {
-    margin-left: 70%;
-}
 
 .Map {
     padding-top: 10px;

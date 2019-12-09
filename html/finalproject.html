@@ -26,43 +26,39 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Text Version of This Website</a>
-                      <li class="nav-item">  
-                        <a class="nav-link" href="https://www.nps.gov/index.htm" target="_blank" > Official National Park Service Site</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nps.gov/index.htm" target="_blank"> Official National Park Service Site</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://findyourpark.com/"   target="_blank">
+                        <a class="nav-link" href="https://findyourpark.com/" target="_blank">
                             Official Find Your Park Site
                         </a>
                 </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0" href="#Map" role="button">Jump to Map</button>
+                <a class="btn btn-outline-success my-2 my-sm-0" href="#Map" role="button">Jump to Map</a>
             </div>
         </nav>
         <div class="jumbotron">
             <h1 class="display-4">United States National Parks</h1>
             <p class="lead">There are currently 61 National Parks (388 total areas covered by the Department of the Interior). Click on the different colored regions to find out more about a park in that area that I recommend! </p>
 
-            <p class="lead">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                &#9733;
+                &#9733;
+                &#9733;
+            </div>
+
             <div class="Map container" id="Map">
                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" id="svgmap" preserveAspectRatio="xMinYMin meet">
                     <title>US Map</title>
                     <defs>
                         <style type="text/css">
-                            /*
-The .state class sets the default fill color for all states.
-
-Individual states (such as Kansas, Montana, Pennsylvania) can be colored as follows:
-
-#KS, #MT, #PA {fill:#0000FF;}
-
-Place this code in the empty space below.
-*/
 
                         </style>
                     </defs>
@@ -223,9 +219,11 @@ Place this code in the empty space below.
                             <circle id="DC2" stroke="#FFFFFF" stroke-width="1.5" cx="801.3" cy="251.8" r="5" opacity="0" /> <!-- Set opacity to "0" to hide DC circle -->
                         </g>
                     </g>
-                    <path id="frames" fill="none" stroke="#A9A9A9" stroke-width="2" d="M215 493v55l36 45M0 425h147l68 68h85l54 54v46" />
                 </svg>
-                <button type="button" class="btn btn-primary reset .btn-lg" id="reset">Reset</button>
+                <div class="button-group" id="button-group">
+                    <button type="button" class="btn btn-secondary hidemap .btn-lg hidemap">Hide Map</button>
+                    <button type="button" class="btn btn-primary reset .btn-lg" id="reset">Reset</button>
+                </div>
             </div>
         </div>
         <div class="container photogroup">
@@ -311,14 +309,26 @@ Place this code in the empty space below.
                         <img src="../images/DSC06348.JPG" class="img-fluid" alt="glacier" title="Glacier">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
+                            </a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <footer class="page-footer font-small mdb-color lighten-3 pt-4 container">
+
+<div class="container regions" id="South"><h2>South</h2></div>
+<div class="container regions" id="Northeast"><h2>Northeast</h2></div>
+<div class="container regions" id="Great-Lakes"><h2>Great-Lakes</h2></div>
+<div class="container regions" id="Rockies"><h2>Rockies</h2></div>
+<div class="container regions" id="Midwest"><h2>Midwest</h2></div>
+<div class="container regions" id="Southwest"><h2>Southwest</h2></div>
+<div class="container regions" id="Utah"><h2>Utah</h2></div>
+<div class="container regions" id="California"><h2>California</h2></div>
+<div class="container regions" id="Northwest"><h2>Northwest</h2></div>
+<div class="container regions" id="Hawaii"><h2>Hawaii</h2></div>
+<div class="container regions" id="Alaska"><h2>Alaska</h2></div>
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4 container">
             <div class="row center">
-                <h3 class="request"> Follow Me On Social Media... </h3>
+                <h2 class="request"> Follow Me On Social Media... </h2>
 
                 <a href="https://twitter.com/juadbr" target="_blank"> <img src="/images/Twitter_Logo_Blue.png" alt="Twitter" class="socialMedia col-lg-3 col-md-1 mb-4"></a>
                 <a href="https://www.linkedin.com/in/justin-bryant-mba-54340b122/" target="_blank"> <img src="/images/sm-icons-linkedIn-In-tm.png" alt="Linkedin" class="socialMedia col-lg-3 col-md-1 mb-4"></a>
@@ -326,9 +336,9 @@ Place this code in the empty space below.
             </div>
         </footer>
 
-       
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="../js/app.js"></script>
 
