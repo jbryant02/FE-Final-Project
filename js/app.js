@@ -1,6 +1,8 @@
 //Select Region
 var region = ["South", "Northeast", "Great-Lakes", "Southwest", "Utah", "Midwest", "Rockies", "Northwest", "California", "Alaska", "Hawaii"];
+var park = ["Acadia", "Crater-Lake", "Denali", "Grand-Canyon", "Shenandoah", "Haleakala", "Yosemite", "Zion", "Isle-Royale", "Glacier"]
 var $regions;
+var $backgroundImage;
 
 
 $('.Map').children().on('click', function (event) {
@@ -31,6 +33,19 @@ $('.hidemap').on('click', function (event) {
     }
 });
 
+
+$('.backgroundimg').on('click', function (event) {
+    console.log(this);
+    $backgroundImage = $(event.target).attr("id");
+    console.log($backgroundImage);
+    for (var i = 0; i < park.length; i++) { //loops through region to select new background image
+        if ($backgroundImage === park[i]) {
+            let srcimage = $(this).attr("src"); //gets img source to variable
+            console.log(srcimage);
+            $('.jumbotron').css('background-image', 'url(' + srcimage + ')');
+        }
+    }
+});
 
 
 

@@ -62,8 +62,8 @@ footer {
     border-bottom: 5px dotted;
     border-top: 20px solid;
     border-bottom-color: black;
-    border-top-color:beige;
-    text-shadow: 2px 2px grey;
+    border-top-color:white;
+    text-shadow: 3px 3px grey;
 }
 
 
@@ -82,7 +82,7 @@ footer {
 .lead {
     font-size:1.5em;
     font-weight: 400;
-    color: black;
+    text-shadow: 1.5px 1.5px grey;
 }
 
 .photogroup {
@@ -110,15 +110,19 @@ footer {
     margin-top: 7px;
     
 }
-footer {
+#footer-container {
     display: inline-flex;
     margin-top: auto;
-    flex-wrap: wrap;
     background-color:#2125;
-    min-width: 100%;
+    background-image: linear-gradient(to right, #2125 95% , black);
     justify-content: center;
-    flex: auto;
-    box-shadow: 5px 10px #888888;;
+    box-shadow: 16px 10px #888888;
+    min-width: 100%;
+
+}
+
+.footer-class {
+    min-width: 100%;
 }
 
 .socialMedia {
@@ -183,6 +187,20 @@ footer {
 
 
 /* Media Queries*/
+@media (max-width: 600px) {
+    .request {
+        font-size: .8em;
+        padding:10px
+    }
+    .img-fluid {
+        width: 80%;
+        margin-left:2em;
+    }
+    .lead {
+        color: white;
+    }
+}
+
 @media (min-width: 319px) {
 
     .jumbotron {
@@ -202,6 +220,7 @@ footer {
     }
 .request {
     color: black;
+    
 }
 
 
@@ -214,217 +233,6 @@ footer {
     .jumbotron {
         min-height: 900px;
         color:black;
-    }
-
-.request {
-    color: black;
-}
-
-@media (min-width: 1080px) {
-
-    .jumbotron {
-        min-height: 1200px;
-    }
-
-}
-=======
-/* General */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 100%;
-    overflow-wrap: break-word;
-}
-
-.container {
-    padding-left: 0;
-    margin left: 0;
-}
-
-#svgmap {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0;
-    padding-bottom: 0;
-    padding-left: 10%;
-
-}
-
-
-.Map {
-    padding-top: 10px;
-    border-top: 10px double black;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 10px double white;
-    margin-bottom: 10px;
-}
-
-footer {
-    padding: 30px 15px;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-}
-
-/* Heading */
-.display-4 {
-    font-weight: bolder;
-    font-size: 4em;
-    border-bottom: 5px dotted;
-    border-top: 20px solid;
-    border-bottom-color: black;
-    border-top-color:beige;
-}
-
-
-.jumbotron {
-    background-image: url(../images/DSC06347.png);
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: black;
-    font-weight: bolder;
-    align-content: center;
-    text-align: center;
-
-}
-
-.photogroup {
-    border-bottom: 15px solid black;
-    margin-bottom: 45px;
-}
-#change-image {
-    text-align: center;
-    border-top: 5px solid;
-    border-left: 5px dotted;
-    border-right: 5px dotted;
-    border-bottom: 5px solid;
-    padding:10px;
-}
-
-
-/* Navigation */
-.navbar-collapse.in {
-    display: block;
-}
-
-/* Footer */
-.request {
-    color: black;
-    margin-top: 7px;
-    
-}
-footer {
-    display: inline-flex;
-    margin-top: auto;
-    flex-wrap: wrap;
-    background-color:#2125;
-    min-width: 100%;
-    justify-content: center;
-    flex: auto;
-}
-
-.socialMedia {
-    max-height: 3.5em;
-    max-width: 3.5em;
-    border-left: 0px;
-    border-right: 3px;
-    border-right-color: black;
-    padding: .5em;
-    margin-top: 0px;
-    background-color: none;
-    align-content: center;
-    display: inline-grid;
-}
-
-img:hover {
-    transform: scale(1.2)
-    
-}
-
-
-/* Regions */
-
-.South {
-    fill: red;
-}
-
-.Northeast {
-    fill: blue;
-}
-
-.Great-Lakes {
-    fill: orange;
-}
-
-.Rockies {
-    fill: purple;
-}
-
-.Midwest {
-    fill: cornflowerblue;
-}
-
-.Southwest {
-    fill: turquoise;
-}
-
-.Utah {
-    fill: orangered;
-}
-
-.California {
-    fill: pink;
-}
-
-.Northwest {
-    fill: forestgreen;
-}
-
-.Hawaii {
-    fill: darkred;
-}
-
-.Alaska {
-    fill: saddlebrown;
-}
-
-
-/* Media Queries*/
-@media (min-width: 319px) {
-
-    .jumbotron {
-        min-height: 600px;
-        color: white;
-        background-image: url(../images/DSC06348.JPG)
-    }
-
-}
-
-@media (min-width: 600px) {
-
-    .jumbotron {
-        min-height: 700px;
-        
-
-    }
-.request {
-    color: black;
-}
-
-
-}
-
-@media (min-width: 769px) {
-
-    .jumbotron {
-        min-height: 900px;
-        color:black;
-        background-image: url(../images/DSC06348.JPG)
     }
 
 .request {
