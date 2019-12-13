@@ -246,3 +246,11 @@ footer {
     }
 
 }
+
+/* Modal */
+    .regions {
+        display:none;
+    }
+    .modal-backdrop {
+        opacity: 30%;
+    }

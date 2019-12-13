@@ -1,6 +1,6 @@
 //Select Region
 var region = ["South", "Northeast", "Great-Lakes", "Southwest", "Utah", "Midwest", "Rockies", "Northwest", "California", "Alaska", "Hawaii"];
-var park = ["Acadia", "Crater-Lake", "Denali", "Grand-Canyon", "Shenandoah", "Haleakala", "Yosemite", "Zion", "Isle-Royale", "Glacier"]
+var park = ["Acadia", "Crater-Lake", "Denali", "Grand-Canyon", "Shenandoah", "Haleakala", "Yosemite", "Zion", "Isle-Royale", "Glacier"];
 var $regions;
 var $backgroundImage;
 
@@ -11,11 +11,25 @@ $('.Map').children().on('click', function (event) {
         console.log(event.target);
         $regions = $(event.target).attr("class");
         console.log($regions);
+        for (var i = 0; i < region.length; i++) {
+            if ($regions === region[i]) {
+                let modalTitle = $("#" + region[i]).text(); //sets modal text to clicked info.
+                let modalBody = $("#1" + region[i]).text();
+                console.log(modalTitle);
+                console.log(modalBody);
+                //delays modal to show fade
+                setTimeout(function () {
+                    $('#modal-title-popup').text(modalTitle); //sets modal info
+                    $('#modal-body-popup').text(modalBody);
+                    $('#info').modal(); //opens modal
+                }, 1500);
+            }
+        }
         for (var i = 0; i < region.length; i++) { //loops through region to animate
             if ($regions !== region[i]) {
                 $("." + region[i]).animate({
                     opacity: 0.15
-                }, 1500)
+                }, 1500);
             }
         }
     }
@@ -46,6 +60,7 @@ $('.backgroundimg').on('click', function (event) {
         }
     }
 });
+
 
 
 
