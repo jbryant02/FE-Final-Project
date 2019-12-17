@@ -109,6 +109,7 @@ footer {
     color: black;
     margin-top: 7px;
     
+    
 }
 #footer-container {
     display: inline-flex;
@@ -123,6 +124,7 @@ footer {
 
 .footer-class {
     min-width: 100%;
+    margin-left: .5em
 }
 
 .socialMedia {
