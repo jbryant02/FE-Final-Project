@@ -207,6 +207,12 @@ footer {
     .lead {
         color: white;
     }
+    /* Text page */
+    .parktext {
+        margin: 10px;
+        margin-right: 15px;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 319px) {
@@ -273,4 +279,16 @@ footer {
 
     .modal-backdrop {
         opacity: 30%;
+    }
+    #modal-title-popup {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+    #modal-body-popup {
+        font-weight:400;
+        font-size: 1em;
+        text-align: justify;
+    }
+    #modal-body-subtitle {
+        font-size: 1.1em;
     }

@@ -15,12 +15,14 @@ $('.Map').children().on('click', function (event) {
             if ($regions === region[i]) {
                 let modalTitle = $("#" + region[i]).text(); //sets modal text to clicked info.
                 let modalBody = $("#1" + region[i]).text();
+                let modalSubTitle = $("#2" + region[i]).text();
                 console.log(modalTitle);
                 console.log(modalBody);
                 //delays modal to show fade
                 setTimeout(function () {
                     $('#modal-title-popup').text(modalTitle); //sets modal info
                     $('#modal-body-popup').text(modalBody);
+                    $('#modal-body-subtitle').text(modalSubTitle);
                     $('#info').modal(); //opens modal
                 }, 1500);
             }
