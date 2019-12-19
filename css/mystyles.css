@@ -255,6 +255,9 @@ footer {
         min-width: 100%;
         padding-top: 1em;
     }
+        .modal-backdrop {
+        opacity: 30%; /* Fixes issue of modal showing black background on smaller screen sizes. */
+    }
 
 }
 
