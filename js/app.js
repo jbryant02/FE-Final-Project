@@ -27,7 +27,7 @@ $('.Map').children().on('click', function (event) {
                 }, 1500);
             }
         }
-        for (var i = 0; i < region.length; i++) { //loops through region to animate
+        for (var i = 0; i < region.length; i++) { //loops through region to animate the unclicked regions
             if ($regions !== region[i]) {
                 $("." + region[i]).animate({
                     opacity: 0.15
@@ -38,7 +38,7 @@ $('.Map').children().on('click', function (event) {
 });
 
 $('.reset').on('click', function (event) {
-    for (var i = 0; i < region.length; i++) { //loops through regions to restyle
+    for (var i = 0; i < region.length; i++) { //loops through regions to restyle and reset
         $("." + region[i]).removeAttr('style');
     }
 });
@@ -62,37 +62,3 @@ $('.backgroundimg').on('click', function (event) {
         }
     }
 });
-
-
-
-
-// for(var i=0; i< buttons.length; i++){
-//    buttons[i].hidden = true;
-//}
-
-//$(class).on('click', function (event) {
-
-//  console.log(event.target);
-//    $(this).hide(1000);
-//    });
-
-//$('.State').click(function() {
-//    var myClass = $(this).attr("class");
-//   alert(myClass);
-//});
-//if( $(event.target).hasClass(".State") ){
-//    $.each(region, function (index, value))
-//           }
-//    console.log(event.target);
-
-/* $('.Map').children().on('click', function (event) {
-    if ($(event.target).attr("id") !== "reset"){
-    var checkState = function stateCheckFunction() {
-        for (var loop = 0; loop < region.length; loop++) {
-        if (this === region[loop]){
-        console.log(checkState);
-        return region[loop];
-            }
-        }
-    }
-    }}); */

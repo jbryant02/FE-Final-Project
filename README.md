@@ -24,7 +24,7 @@ For the regions themselves, I tried to select colors that would stand out not ju
 
 ## Design choices
 
-I vastly reduced the size of the images to reduce load times, at a sacrifice of quality. One future improvement I would like to add to the site would be to find a way for the user elect to use the high quality images for the background image if data is not a concern.
+I vastly reduced the size of the images to reduce load times, at a sacrifice of quality. One future improvement I would like to add to the site would be to find a way for the user elect to use the high quality images for the background image if data is not a concern. Another future improvement would be to condense the photos from the change your background div on a mobile webpage to a single slideshow to reduce the height of the website.
 
 Overall I went for a simplistic layout that would not confuse or overwhelm the user in a small webpage that is quickly accessible, with minimal text cluttering the screen. The intent was to provide a visually appealing website with high functionality.
 

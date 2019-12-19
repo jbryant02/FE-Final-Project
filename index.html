@@ -13,7 +13,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
             <a class="navbar-brand" href="#">Let Me "Find Your Park"</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,6 +37,7 @@
                 <a class="btn btn-outline-success my-2 my-sm-0" href="text.html" role="button">Text Version of This Website</a>
             </div>
         </nav>
+        <!-- Jumbotron-->
         <div class="jumbotron">
             <h1 class="display-4">United States National Parks</h1>
             <p class="lead">There are currently 61 National Parks (388 total areas covered by the Department of the Interior). Click on the different colored regions to find out more about a park in that area that I recommend! </p>
@@ -51,7 +53,7 @@
                 &#9733;
                 &#9733;
             </div>
-
+<!-- Map-->
             <div class="Map container" id="Map">
                 <! ––Map taken from https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg Attributions: Theshibboleth [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)] -->
                     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -227,12 +229,13 @@
             </div>
         </div>
     </header>
+    <!-- Change your background photo option-->
     <div class="container photogroup">
         <h1 id="change-image">Change Your Background Image</h1>
         <div class="row">
             <div class="col-lg-2 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/acadia1.jpg"  class="img-fluid backgroundimg lazyload" alt="acadia" title="Acadia" id="Acadia">
+                    <img src="images/acadia1.jpg"  class="img-fluid backgroundimg" alt="acadia" title="Acadia" id="Acadia">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -240,7 +243,7 @@
             </div>
             <div class="col-lg-2 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/crater%20lake.JPG" class="img-fluid backgroundimg lazyload" alt="crater lake" title="Crater Lake" id="Crater-Lake">
+                    <img src="images/crater%20lake.JPG" class="img-fluid backgroundimg" alt="crater lake" title="Crater Lake" id="Crater-Lake">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -248,7 +251,7 @@
             </div>
             <div class="col-lg-2 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/denali.JPG" class="img-fluid backgroundimg lazyload" alt="denali" title="Denali" id="Denali">
+                    <img src="images/denali.JPG" class="img-fluid backgroundimg" alt="denali" title="Denali" id="Denali">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -256,7 +259,7 @@
             </div>
             <div class="col-lg-2 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/gc.JPG" class="img-fluid backgroundimg lazyload" alt="grand canyon" title="Grand Canyon" id="Grand-Canyon">
+                    <img src="images/gc.JPG" class="img-fluid backgroundimg" alt="grand canyon" title="Grand Canyon" id="Grand-Canyon">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -264,7 +267,7 @@
             </div>
             <div class="col-lg-2 col-md-6 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/shenandoah.JPG" class="img-fluid backgroundimg lazyload" alt="shenandoah" title="Shenandoah" id="Shenandoah">
+                    <img src="images/shenandoah.JPG" class="img-fluid backgroundimg" alt="shenandoah" title="Shenandoah" id="Shenandoah">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -272,7 +275,7 @@
             </div>
             <div class="col-lg-2 col-md-6 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/haleakala.JPG" class="img-fluid backgroundimg lazyload" alt="haleakala" title="Haleakala" id="Haleakala">
+                    <img src="images/haleakala.JPG" class="img-fluid backgroundimg" alt="haleakala" title="Haleakala" id="Haleakala">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -282,7 +285,7 @@
         <div class="row center">
             <div class="col-lg-3 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/yosemite.JPG" class="img-fluid backgroundimg lazyload" alt="yosemite" title="Yosemite" id="Yosemite">
+                    <img src="images/yosemite.JPG" class="img-fluid backgroundimg " alt="yosemite" title="Yosemite" id="Yosemite">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -290,7 +293,7 @@
             </div>
             <div class="col-lg-3 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/zion.JPG" class="img-fluid backgroundimg lazyload" alt="zion" title="Zion" id="Zion">
+                    <img src="images/zion.JPG" class="img-fluid backgroundimg " alt="zion" title="Zion" id="Zion">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -298,7 +301,7 @@
             </div>
             <div class="col-lg-3 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/IR.JPG" class="img-fluid backgroundimg lazyload" alt="isle royale" title="Isle Royale" id="Isle-Royale">
+                    <img src="images/IR.JPG" class="img-fluid backgroundimg " alt="isle royale" title="Isle Royale" id="Isle-Royale">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
 
@@ -307,7 +310,7 @@
             </div>
             <div class="col-lg-3 col-md-3 mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <img src="images/DSC06348.JPG" class="img-fluid backgroundimg lazyload" alt="glacier" title="Glacier" id="Glacier">
+                    <img src="images/DSC06348.JPG" class="img-fluid backgroundimg " alt="glacier" title="Glacier" id="Glacier">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
@@ -336,7 +339,7 @@
             </div>
         </div>
     </div>
-
+<!-- Park Write Ups-->
     <div class="container regions">
         <h2 id="South">South</h2>
         <p id="2South">Shenandoah National Park - </p>
@@ -399,6 +402,7 @@
         <p id="2Alaska">Denali National Park -</p>
         <p id="1Alaska"> Established in 1917 and located in Central Alaska, was recently renamed to honor the indigenous tribes name for the mountain. It features Denali, the highest point in North America and remarkable amount of Grizzlies, Elk, and Moose which can be seen from the 4 hour bus tour offered from the visitor's center. Thanks to near constant cloud cover, there is only about a 25% chance to see Denali on any given day-- meaning you could spend a week there and never get a glimpse of the mountain. Sometimes it is all about luck! Alaska features 7 other National Parks-- many can be quite difficult (or expensive) to get to!</p>
     </div>
+    <!-- Footer-->
     <footer class="mt-auto py-3 container footer-class">
         <div class="container" id="footer-container">
             <h4 class="request"> Follow Me On Social Media... </h4>
@@ -413,6 +417,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="lazysizes.min.js" async></script>
     <script src="js/app.js"></script>
 </body></html>
