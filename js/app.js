@@ -7,17 +7,12 @@ var $backgroundImage;
 
 $('.Map').children().on('click', function (event) {
     if ($(this).attr("id") !== "reset" && $(this).attr("id") !== "button-group") { //excludes reset button to prevent opacity changes.
-        console.log($(this).parent().attr("id"));
-        console.log(event.target);
         $regions = $(event.target).attr("class");
-        console.log($regions);
         for (var i = 0; i < region.length; i++) {
             if ($regions === region[i]) {
                 let modalTitle = $("#" + region[i]).text(); //sets modal text to clicked info.
                 let modalBody = $("#1" + region[i]).text();
                 let modalSubTitle = $("#2" + region[i]).text();
-                console.log(modalTitle);
-                console.log(modalBody);
                 //delays modal to show fade
                 setTimeout(function () {
                     $('#modal-title-popup').text(modalTitle); //sets modal info
@@ -51,9 +46,7 @@ $('.hidemap').on('click', function (event) {
 
 
 $('.backgroundimg').on('click', function (event) {
-    console.log(this);
     $backgroundImage = $(event.target).attr("id");
-    console.log($backgroundImage);
     for (var i = 0; i < park.length; i++) { //loops through region to select new background image
         if ($backgroundImage === park[i]) {
             let srcimage = $(this).attr("src"); //gets img source to variable

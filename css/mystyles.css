@@ -61,9 +61,7 @@ footer {
     font-weight: bolder;
     font-size: 4em;
     border-bottom: 5px dotted;
-    border-top: 20px solid;
     border-bottom-color: black;
-    border-top-color: white;
     text-shadow: 3px 3px grey;
 }
 
@@ -78,6 +76,7 @@ footer {
     font-weight: bolder;
     align-content: center;
     text-align: center;
+    opacity: .95
 
 }
 
@@ -148,47 +147,47 @@ footer {
 /* Regions */
 
 .South {
-    fill: red;
+    fill: #8C2318;
 }
 
 .Northeast {
-    fill: blue;
+    fill: #5E8C6A;
 }
 
 .Great-Lakes {
-    fill: orange;
+    fill: #88A65E;
 }
 
 .Rockies {
-    fill: purple;
+    fill: #BFB35A;
 }
 
 .Midwest {
-    fill: cornflowerblue;
+    fill: #F2C45A;
 }
 
 .Southwest {
-    fill: turquoise;
+    fill: #413E4A;
 }
 
 .Utah {
-    fill: orangered;
+    fill: #ED834E;
 }
 
 .California {
-    fill: pink;
+    fill: #5E9FA3;
 }
 
 .Northwest {
-    fill: forestgreen;
+    fill: #FAB87F;
 }
 
 .Hawaii {
-    fill: darkred;
+    fill: #800000;
 }
 
 .Alaska {
-    fill: saddlebrown;
+    fill: #111625;
 }
 
 
@@ -204,9 +203,6 @@ footer {
         margin-left: 2em;
     }
 
-    .lead {
-        color: white;
-    }
 
     .parktext {
         text-align: justify;
@@ -240,7 +236,6 @@ footer {
 
     .jumbotron {
         min-height: 600px;
-        color: white;
     }
 
     .regions {
