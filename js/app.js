@@ -50,7 +50,6 @@ $('.backgroundimg').on('click', function (event) {
     for (var i = 0; i < park.length; i++) { //loops through region to select new background image
         if ($backgroundImage === park[i]) {
             let srcimage = $(this).attr("src"); //gets img source to variable
-            console.log(srcimage);
             $('.jumbotron').css('background-image', 'url(' + srcimage + ')');
         }
     }
